@@ -13,6 +13,6 @@ public class Poop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mat.color = Color.Lerp(Color.red, Color.green, Mathf.PingPong(Time.time, 1));
+        mat.color = Color.Lerp(Color.red, Color.blue, Mathf.PingPong(Time.time, 1));
     }
 }
