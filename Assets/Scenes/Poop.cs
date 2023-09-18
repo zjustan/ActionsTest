@@ -5,11 +5,6 @@ using UnityEngine;
 public class Poop : MonoBehaviour
 {
     public Material mat;
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
