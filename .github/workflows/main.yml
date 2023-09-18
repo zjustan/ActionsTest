@@ -7,6 +7,10 @@ jobs:
     name: Build my project ✨
     runs-on: self-hosted
     steps:
+      # change permissions
+      - name: Set owner of working dir recurively (Linux)
+        if: ${{ inputs.build_platform == 'linux' }}
+        run: sudo chown -R $(whoami) .
       # Checkout
       - name: Checkout repository
         uses: actions/checkout@v2
